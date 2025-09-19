@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Part One</h1>
+    <h3>JavaScript Event Handling Example</h3>
+
+    <!-- Click Event -->
+    <button id="showMessageBtn">Click Me</button>
+    <p id="message" class="hidden">🎉 You clicked the button!</p>
+
+    <!-- Mouseover Event -->
+    <div id="colorBox" class="box">Hover over me</div>
+
+    <!-- Keyboard Input Event -->
+    <input type="text" id="nameInput" placeholder="Type your name here" />
+    <p>Your name: <span id="displayName"></span></p>
+
+    <!-- Toggle Visibility -->
+    <button id="toggleContentBtn">Hide Content</button>
+    <div id="content">
+      <p>This is some content that can be hidden or shown.</p>
+    </div>
+
+<!--Part Two-->
+    <h1>Part Two</h1>
+     <h1>Interactive Elements</h1>
+
+  <!-- 1. Light/Dark Mode Toggle -->
+  <section>
+    <h2>Light/Dark Mode</h2>
+    <button id="themeToggleBtn">Switch to Dark Mode 🌙</button>
+  </section>
+
+  <hr>
+
+  <!-- 2. Counter Game -->
+  <section id="count">
+    <h2>Counter Game</h2>
+    <p>Count: <span id="counter">0</span></p>
+    <button id="increaseBtn">Increase</button>
+    <button id="decreaseBtn">Decrease</button>
+    <button id="resetBtn">Reset</button>
+  </section>
+
+  <hr>
+
+  <!-- 3. Collapsible FAQ Section -->
+  <section>
+    <h2>FAQ Section</h2>
+    <div class="faq">
+      <button class="faq-question">What is JavaScript?</button>
+      <div class="faq-answer">JavaScript is a programming language used to add interactivity to web pages.</div>
+    </div>
+    <div class="faq">
+      <button class="faq-question">What is DOM?</button>
+      <div class="faq-answer">DOM stands for Document Object Model, which represents the structure of a web page.</div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- 4. Tabbed Interface -->
+  <section>
+    <h2>Tabbed Interface</h2>
+    <div class="tabs">
+      <button class="tab-button active" data-tab="tab1">Tab 1</button>
+      <button class="tab-button" data-tab="tab2">Tab 2</button>
+      <button class="tab-button" data-tab="tab3">Tab 3</button>
+    </div>
+    <div class="tab-content active" id="tab1">
+      <p>This is content for Tab 1.</p>
+    </div>
+    <div class="tab-content" id="tab2">
+      <p>This is content for Tab 2.</p>
+    </div>
+    <div class="tab-content" id="tab3">
+      <p>This is content for Tab 3.</p>
+    </div>
+  </section>
+
+<!--Part Three-->
+  <h1>Part Three</h1>
+  <div class="form-wrapper">
+    <h1 class="form-title">Create Your Account</h1>
+
+    <form id="signupForm" novalidate>
+      <!-- Name Field -->
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name">
+        <small class="error" id="nameError"></small>
+      </div>
+
+      <!-- Email Field -->
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com">
+        <small class="error" id="emailError"></small>
+      </div>
+
+      <!-- Password Field -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="••••••••">
+        <small class="error" id="passwordError"></small>
+      </div>
+
+      <!-- Confirm Password Field -->
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="••••••••">
+        <small class="error" id="confirmPasswordError"></small>
+      </div>
+
+      <button type="submit" class="btn-submit">Sign Up</button>
+      <p class="success" id="successMessage"></p>
+    </form>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
